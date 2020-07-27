@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inventariable.newinventariable.AddInvActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="393dp"
+        android:layout_height="701dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="176dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPhoto" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="170dp"
+                android:layout_height="0dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toEndOf="@+id/editTextName"
+                app:layout_constraintTop_toTopOf="@+id/editTextName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageViewPhoto"
+                android:layout_width="178dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                app:srcCompat="@drawable/image_not_loaded_icon" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="358dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/descr"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextUbicacion" />
+
+            <Button
+                android:id="@+id/buttonAction"
+                android:layout_width="104dp"
+                android:layout_height="51dp"
+                android:layout_marginEnd="70dp"
+                android:text="@string/add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.681"
+                app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+                app:layout_constraintTop_toTopOf="@+id/buttonCancel" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="107dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/cancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDescription" />
+
+            <EditText
+                android:id="@+id/editTextUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/ubi"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

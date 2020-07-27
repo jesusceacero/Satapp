@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_created_tickets"
+        android:title="@string/action_created_tickets" />
+    <item
+        android:id="@+id/action_add_ticket"
+        android:icon="@drawable/ic_add_circle_white_24dp"
+        android:title="@string/action_add_ticket"
+        app:showAsAction="ifRoom" />
+
+</menu>

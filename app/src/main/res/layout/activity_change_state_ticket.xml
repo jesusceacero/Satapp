@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.tickets.changestate.ChangeStateTicketActivity">
+
+    <Button
+        android:id="@+id/buttonStatePendienteAsignacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_primary"
+        android:text="@string/btn_state_pendiente"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStateAsignada"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSelectState"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewSelectState"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectState" />
+
+    <TextView
+        android:id="@+id/textViewSelectState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/txt_select_stated"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStatePendienteAsignacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStateAsignada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_primary"
+        android:text="@string/btn_asignada"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStateEnProceso"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStatePendienteAsignacion"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonStatePendienteAsignacion"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStatePendienteAsignacion" />
+
+    <Button
+        android:id="@+id/buttonStateEnProceso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_primary"
+        android:text="@string/btn_en_proceso"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStateSolucionada"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStateAsignada"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonStateAsignada"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStateAsignada" />
+
+    <Button
+        android:id="@+id/buttonStateSolucionada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_primary"
+        android:text="@string/btn_solucionada"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStateEnProceso"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonStateEnProceso"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStateEnProceso" />
+</androidx.constraintlayout.widget.ConstraintLayout>

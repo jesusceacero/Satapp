@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewType"
+                android:layout_width="81dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_not_loaded_icon" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="146dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewType"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="233dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/imageViewType"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+            <TextView
+                android:id="@+id/textViewWhen"
+                android:layout_width="42dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="TextView"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewTime"
+                android:layout_width="17dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewWhen"
+                app:layout_constraintEnd_toStartOf="@+id/textViewWhen"
+                app:layout_constraintTop_toTopOf="@+id/textViewWhen"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_timer_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imageViewInventa"
+                android:layout_width="28dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:text="TextView"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewWhen"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewTime"
+                app:layout_constraintTop_toTopOf="@+id/textViewWhen"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="17dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLocation"
+                app:layout_constraintEnd_toStartOf="@+id/textViewLocation"
+                app:layout_constraintTop_toTopOf="@+id/textViewLocation"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_place_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:layout_width="32dp"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/redd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_delete_forever_white_24dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
